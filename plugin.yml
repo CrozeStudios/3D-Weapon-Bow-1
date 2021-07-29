@@ -1,0 +1,9 @@
+---
+name: Guns
+main: arthur\Main
+version: 0.0.1
+api: 3.22.1
+load: STARTUP
+author: arthur
+description: 'Replaces Bow With A Fully Animated Deagle'
+...

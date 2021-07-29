@@ -43,6 +43,5 @@ class Main extends PluginBase implements Listener{
         $forceResources = $r->getProperty("serverForceResources");
         $forceResources->setAccessible(true);
         $forceResources->setValue($this->getServer()->getResourceManager(), true);
-        }
     }
 }

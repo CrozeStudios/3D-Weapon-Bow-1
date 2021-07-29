@@ -11,3 +11,9 @@ Ace Entities Addon MCPE
   
 # Plugin By
  Croze Studios/Arthur IV studios
+
+[![](https://poggit.pmmp.io/shield.state/Guns)](https://poggit.pmmp.io/p/Guns)
+<a href="https://poggit.pmmp.io/p/Guns"><img src="https://poggit.pmmp.io/shield.state/Guns"></a>
+
+[![](https://poggit.pmmp.io/shield.api/Guns)](https://poggit.pmmp.io/p/Guns)
+<a href="https://poggit.pmmp.io/p/Guns"><img src="https://poggit.pmmp.io/shield.api/Guns"></a>

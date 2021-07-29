@@ -2,28 +2,32 @@
 
 namespace arthur;
 
-use pocketmine\block\BlockFactory;
-use pocketmine\entity\Entity;
-use pocketmine\event\Listener;
-use pocketmine\level\Level;
-use pocketmine\math\Vector3;
-use pocketmine\plugin\PluginBase;
-use pocketmine\resourcepacks\ZippedResourcePack;
+use pocketmine\{
+	level\Level,
+	math\Vector3,
+	entity\Entity,
+	event\Listener,
+	plugin\PluginBase,
+	block\BlockFactory,
+	resourcepacks\ZippedResourcePack
+	};
 
 
-class Main extends PluginBase implements Listener{
+class Main extends PluginBase implements Listener
+{
     /**
      * When the plugin enables
      *
      * @return void
      */
-    public function onEnable(){
+    public function onEnable()
+    {
         //3D Guns Loader
-		if(!file_exists($this->getDataFolder())){
+		if (!file_exists($this->getDataFolder())) {
 			mkdir($this->getDataFolder());
 		}
         $downRP = false;
-        if(!file_exists($this->getDataFolder() . "Guns.mcpack")) {
+        if (!file_exists($this->getDataFolder() . "Guns.mcpack")) {
             $downRP = true;
             file_put_contents($this->getDataFolder() . "Guns.mcpack");
         }
@@ -43,6 +47,5 @@ class Main extends PluginBase implements Listener{
         $forceResources = $r->getProperty("serverForceResources");
         $forceResources->setAccessible(true);
         $forceResources->setValue($this->getServer()->getResourceManager(), true);
-        }
     }
 }
